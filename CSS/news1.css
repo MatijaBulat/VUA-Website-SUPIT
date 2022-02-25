@@ -1,0 +1,169 @@
+
+
+body {
+  text-align: center;
+  height: 100%;
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    top: -500px;
+  }
+  to {
+    opacity: 1;
+    top: 68px;
+  }
+}
+
+.news1-banner {
+  animation: fromTop 2s ease;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  top: 68px;
+  background-image: url("../img/novost1.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.news1-banner h2 {
+  padding-top: 10%;
+  text-align: center;
+  font-size: 200%;
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.content-area {
+  width: 100%;
+  position: relative;
+  top: 90px;
+}
+
+.title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  animation: fromBottom 2s ease;
+  text-align: center;
+}
+.title h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 45px;
+}
+.title::after {
+  content: " ";
+  background: #f19e05;
+  display: block;
+  height: 3px;
+  width: 80%;
+  margin: 20px auto 5px;
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0.8;
+    bottom: -100px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+main {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 0;
+}
+
+article {
+  width: 100%;
+  padding: 5% 0 5% 0;
+  background-color: #f7f7f7;
+  display: inline-block;
+}
+
+.text {
+  margin: auto;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125em;
+  animation: textAppearance 2s ease;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+@keyframes textAppearance {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.post {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.piks {
+  display: inline-block;
+  width: 80%;
+}
+
+.papic-pik {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.papic-pik img {
+  width: 96%;
+  margin: 2%;
+}
+
+.pred-pik {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.pred-pik img {
+  width: 96%;
+  margin: 2%;
+}
+
+.news-video {
+  width: 70% !important;
+  display: block;
+  margin: auto;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .piks {
+    width: 100%;
+    margin: 0;
+  }
+  .post {
+    margin-bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .piks {
+    width: 100%;
+    margin: 0;
+  }
+  .post {
+    margin-bottom: 10%;
+  }
+}

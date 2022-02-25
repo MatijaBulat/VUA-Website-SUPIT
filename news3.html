@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT</title>
+    <link rel="icon" href="../img/Algebra-logo.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="./CSS/news3.css">
+    <!--css-->
+    <link rel="stylesheet" href="./CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/Kontakt.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.css">
+    <!--ikone-->
+
+    <script src="./JSscript/jquery-2.1.4.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script src="./JSscript/navbar.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar">
+            <a href="./IndexPage.html" id="algLogo" class="navbar-brand"><img src="./img/Algebra-logo.png"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="./IndexPage.html" class="nav-link"><i class="fas fa-home"></i> Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Onama.html" class="nav-link"><i class="fas fa-info-circle"></i> O nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./novosti.html" class="nav-link"><i class="fas fa-bell"></i> Novosti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./nastava.html" class="nav-link"><i class="fas fa-graduation-cap"></i> Nastavni
+                            plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kontakt" rel="modal:open" id="KontaktLi"> <i class="fas fa-envelope"></i> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="baner"></div>
+
+        <div class="title">
+            <h2>Digitalno Junior ljeto</h2>
+        </div>
+
+        <article>
+            <div class="text">Algebra Junior organizira edukativne i zabavne ljetne praznike za sve
+                osnovnoškolce! I ove smo godine pripremili digitalne radionice za djecu čiji je fokus
+                rješavanja raznih problema korištenjem tehnologije, multimedije, digitalnog dizajna i
+                komunikacija te stvaranju sadržaja u svim multimedijskim i softverskim
+                oblicima. Radionice se održavaju u sklopu Digitalnog ljetnog kampa u Crikvenici i Digitalne
+                ljetne škole u Zagrebu kako bismo se družili, zabavljali i učili i na
+                moru i na kontinentu! Na digitalnom kampu i u školi provodit će se dva različita programa koji
+                su namijenjena djeci od 1. do 8. razreda. Ovisno o
+                odabranom terminu, polaznici će prolaziti kroz 1. ili 2. program, a u slučaju pohađanja
+                dvotjednih programa – oba. U prvom programu nađe nindže uče biti glazbeni
+                menadžeri dok su u drugom novinari i kreatori informacija masovnih medija. Provjerite termine,
+                cijene i lokacije škole i kampa na sljedećem linku.</div>
+        </article>
+
+    </main>
+
+    <footer>
+        <h3>Budi izvrstan u onome što voliš <br> <span>Zaiskri</span></h3>
+    </footer>
+
+    <script src="../JSscript/jquerymodaldefaultvalues.js"></script>
+
+    <div id="kontakt" class="modal">
+        <div class="modal-header">
+            <h1> <i style="color:cornflowerblue;" class="fas fa-envelope"></i> Kontaktirajte nas</h1>
+        </div>
+        <form method="post" action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+            <table cellpadding="3">
+                <tr>
+                    <td>
+                        <label for="name">Puno ime:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input required type="text" id="name" name="name" placeholder="Puno ime.." />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">E-mail:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input required type="email" id="email" name="email" placeholder="Email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="importance">Važnost poruke:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="importance" id="importance">
+                            <option value="Visoka">Visoka</option>
+                            <option value="Niska">Niska</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="message"> Vaša poruka: </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea required name="message" id="message" placeholder="Vaša poruka"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="newsletter"> Primaj newsletter: </label>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+                    </td>
+                </tr>
+                <tr class="modal-footer">
+                    <td>
+                        <input class="btn btn-primary" type="submit" value="Pošalji" />
+                        <button class="btn btn-danger" type="button" onclick="$.modal.close()">Odustani</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

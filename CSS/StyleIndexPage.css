@@ -1,0 +1,37 @@
+
+.typebox {
+  position: sticky;
+  margin: auto;
+  width: 64%;
+  top: 30%;
+}
+
+.typebox > div {
+  font-family: verdana;
+  width: 80%;
+  margin: 0 10%;
+  text-align: left;
+  font-size: 3em;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+#mainVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 768px)
+{
+  .typebox > div {
+    font-family: verdana;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px #000000;
+  }
+}
